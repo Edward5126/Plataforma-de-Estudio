@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ingeniería Plus MX</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="IMG/Logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="app-container">
+
+    <!-- Top bar -->
+    <header class="top-bar">
+      <span class="explore">Estudiando en: <br><span>Facultad de Ingeniería UADY</span></span>
+      <div class="icons">
+        <span class="icon">🔔</span>
+        <span class="icon">🛒</span>
+      </div>
+    </header>
+
+    <!-- Páginas -->
+    <main>
+      <!-- Página: Inicio -->
+      <section class="page" id="home-page">
+        <div class="greeting">
+          <p class="hello">¡Hola, <span>estudiante</span>! 👋</p>
+          <p class="progress-text">¿Qué quieres aprender hoy?</p>
+        </div>
+
+        <div class="search-box">
+          <input type="text" placeholder="Buscar..." />
+        </div>
+
+        <section class="special-offer">
+          <div class="offer-card">
+            <div class="offer-text">
+              <p>Curso de Física I</p>
+              <h3>50% OFF</h3>
+              <button>¡Aprender ahora!</button>
+            </div>
+            <div class="offer-image">
+              <img src="IMG/Aprendizaje1.svg" alt="Offer" />
+            </div>
+          </div>
+        </section>
+
+        <section class="categories">
+          <div class="section-header">
+            <h3>Categorías</h3>
+            <a href="#">Ver todo</a>
+          </div>
+          <div class="category-list">
+            <span>Ciencias Básicas</span>
+            <span>Computación</span>
+            <span>Física</span>
+          </div>
+        </section>
+
+        <section class="ongoing">
+          <div class="section-header">
+            <h3>Estudiando</h3>
+            <a href="#">Ver todo</a>
+          </div>
+
+          <button data-target="ongoing-page" class="button-change-page" id="open-ongoing-course">
+            <div class="course-card ongoing-card">
+              <img src="IMG/Fisica1.jpg" alt="Course" />
+              <div class="course-info">
+                <h4>Curso de Física I</h4>
+                <p class="date-course-ongoing">19 de Mayo 2025</p>
+                <div class="progress-container">
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%;"></div>
+                  </div>
+                  <span class="progress-text">50%</span>
+                </div>              
+                <p class="progress-course-ongoing">Lección  30/60</p>
+              </div>
+            </div>
+          </button>
+
+          
+        </section>
+      </section>
+
+      <!-- Página: Mensajes -->
+      <section class="page" id="ongoing-page">
+        <div class="course-details">
+          <!-- Imagen/Vídeo -->
+          <div class="course-image">
+            <div class="video-container">
+              <iframe 
+                src="https://www.youtube.com/embed/xcVmlkdSTEg" 
+                title="Sumatoria de Fuerzas: Componentes"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="overlay-icons">
+              <span class="icon heart">❤️</span>
+              <span class="icon share">🔗</span>
+            </div>
+          </div>
+        
+          <!-- Información del curso -->
+          <div class="course-info">
+            <h2>Sumatoria de fuerzas: Componentes</h2>
+            <div class="tag-rating">
+              <span class="tag">Ciencias Básicas</span>
+              <span class="rating">⭐ 3.9 <span class="reviews">(50 Reviews)</span></span>
+            </div>
+            <div class="price">Lección 30 / 60</div>
+        
+            <!-- Detalles rápidos -->
+            <div class="course-meta">
+              <span>⏱️ 1 hora 24 minutos</span>
+              <span>📚 2 temas</span>
+              <span>📜 Docs</span>
+            </div>
+          </div>
+        
+          <!-- Tabs -->
+          <div class="tabs">
+            <button class="tab active">Acerca de</button>
+            <button class="tab">Contenido</button>
+            <button class="tab">Foro</button>
+          </div>
+        
+          <!-- Descripción -->
+          <div class="about-section">
+            <h3>Sobre la lección</h3>
+            <p>
+              En esta lección, aprenderás a descomponer fuerzas en sus componentes rectangulares y cómo aplicar esta técnica 
+              para realizar sumatorias de fuerzas en diferentes direcciones (<strong>ejes X y Y</strong>). Este análisis es 
+              esencial para resolver problemas de equilibrio en estructuras y sistemas mecánicos.
+            </p>
+            <p>
+              <strong>Exploraremos:</strong>
+              <ul>
+                <li>Qué son los componentes de una fuerza.</li>
+                <li>Cómo usar trigonometría para obtener las componentes horizontal y vertical.</li>
+                <li>La importancia del signo (+/–) según el sistema de referencia.</li>
+                <li>Aplicación práctica en ejercicios de cuerpos en equilibrio.</li>
+              </ul>
+            </p>
+            <p>
+              Al finalizar, podrás representar correctamente cualquier fuerza como la suma de sus componentes 
+              y aplicar este conocimiento para resolver situaciones reales en estática y física general.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Página: Mensajes -->
+      <section class="page" id="messages-page">
+        <h2>Mensajes</h2>
+        <p>¡Aún no has recibido mensajes!</p>
+      </section>
+
+      <!-- Página: Favoritos -->
+      <section class="page" id="favorites-page">
+        <h2>Favoritos</h2>
+        <p>Aquí aparecerán los cursos que marques como favoritos</p>
+      </section>
+
+      <!-- Página: Perfil -->
+      <section class="page" id="profile-page">
+        <h2>Perfil</h2>
+        <p>Regístrate para personalizar tu perfil</p>
+      </section>
+    </main>
+
+    <!-- Navegación inferior -->
+    <nav class="bottom-nav">
+      <button class="button-change-page" data-target="home-page">🏠</button>
+      <button class="button-change-page" data-target="messages-page">💬</button>
+      <button class="button-change-page" data-target="favorites-page">❤️</button>
+      <button class="button-change-page" data-target="profile-page">👤</button>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="serviceworker.js"></script>
+</body>
+</html>

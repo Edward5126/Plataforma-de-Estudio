@@ -1,0 +1,20 @@
+{
+    "name": "Ingeniería Plus MX",
+    "short_name": "Ingeniería+ MX",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#418AB3",
+    "theme_color": "#418AB3",
+    "description": "Plataforma de estudio para ingeniería",
+    "orientation": "portrait",
+    "lang": "Spanish",
+    "categories" : ["business", "services", "education"],
+    "icons": [
+      {
+        "src": "IMG/Logo.png",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+  
